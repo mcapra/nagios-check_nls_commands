@@ -1,11 +1,11 @@
 #!/usr/bin/php
 <?php
-// Check SSL Certificates PLUGIN
+// Check NLS Commands PLUGIN
 //
 // Copyright (c) 2016 Matthew Capra, Nagios Enterprises <mcapra@nagios.com>
 //  
 // $Id: $mcapra@nagios.com
-define("PROGRAM", 'check_ssl_expiration.php');
+define("PROGRAM", 'check_nls_commands.php');
 define("VERSION", '1.0.0');
 define("STATUS_OK", 0);
 define("STATUS_WARNING", 1);
