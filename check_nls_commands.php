@@ -6,7 +6,7 @@
 //  
 // $Id: $mcapra@nagios.com
 define("PROGRAM", 'check_nls_commands.php');
-define("VERSION", '1.0.0');
+define("VERSION", '1.0.1');
 define("STATUS_OK", 0);
 define("STATUS_WARNING", 1);
 define("STATUS_CRITICAL", 2);
