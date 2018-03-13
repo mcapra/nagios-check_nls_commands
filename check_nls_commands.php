@@ -148,6 +148,9 @@ function check_commands($options) {
 	
 	$commands = json_decode($resp);
 	
+	if($commands->error)
+                nagios_exit('UNKNOWN - ' . $commands->message, STATUS_UNKNOWN);
+	
 	if(isset($options['verbose']))
 		print_r($commands);
 	
