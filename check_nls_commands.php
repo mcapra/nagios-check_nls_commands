@@ -6,7 +6,7 @@
 //  
 // $Id: $mcapra@nagios.com
 define("PROGRAM", 'check_nls_commands.php');
-define("VERSION", '1.0.1');
+define("VERSION", '1.0.2');
 define("STATUS_OK", 0);
 define("STATUS_WARNING", 1);
 define("STATUS_CRITICAL", 2);
@@ -217,10 +217,10 @@ function get_nls_version($a, $k, $options) {
 function get_url($a, $options) {
 	$url = null;
 	if(isset($options['ssl'])) {
-		$url = 'https://' . $a. '/nagioslogserver/api/backend/';
+		$url = 'https://' . $a. ':9200/';
 	}
 	else {
-		$url = 'http://' . $a . '/nagioslogserver/api/backend/';
+		$url = 'http://' . $a . ':9200/';
 	}
 	return $url;
 }
